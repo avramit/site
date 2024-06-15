@@ -1,0 +1,47 @@
+---
+title: בית
+layout: default
+---
+<div id="about">
+    <p class="message">
+        שמי עמית אברהמוב
+        <br>
+        אני תלמיד כיתה יב המתעניין בתחום ה Web Security.
+        <br>
+        החלטתי להקים את האתר הזה על מנת שאוכל לשתף את הידע שלי בתחום.
+        <span id="socialLinks">
+            <a href="https://github.com/avramit">GitHub</a>
+            |
+            <a href="https://twitter.com/avr4mit">Twitter</a>
+        </span>
+    </p>
+</div>
+
+{% for post in site.posts %}
+<article class="post">
+    <header class="post-header">
+        <h2 class="post-title">
+            <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+        </h2>
+        <span class="post-meta">
+            {{ post.date | date: '%d/%m/%Y' }}
+        </span>
+    </header>
+    <section>
+        {{ post.excerpt }}
+        <a href="{{ site.baseurl }}{{ post.url }}">המשך...</a>
+    </section>
+</article>
+{% endfor %}
+
+<div class="footer">
+    <span>ממליץ להעיף מבט:</span>
+    <div class="tags">
+        <a class="tag" href="https://rainbowdash.blog/">rainbowdash</a>
+        <a class="tag" href="https://narcissus.dev/he">narcissus</a>
+        <a class="tag" href="https://yoavst.com/">yoavst</a>
+        <a class="tag" href="https://unskid.me/">unskid.me</a>
+        <a class="tag" href="https://iamgweej.github.io/">iamgweej</a>
+        <a class="tag" href="https://www.digitalwhisper.co.il/">digitalwhisper</a>
+    </div>
+</div>

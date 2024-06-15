@@ -1,0 +1,10 @@
+title: whoru
+tagline: בלוג אבטחת מידע
+baseurl: 'https://avramit.github.io/site/'
+
+gtag: UA-41950406-4
+
+author:
+  name: עמית אברהמוב
+
+excerpt_separator: <!--more-->

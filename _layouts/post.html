@@ -1,0 +1,17 @@
+---
+layout: default
+---
+<article class="post">
+    <h2 class="post-title">{{ page.title }}</h2>
+    <span class="post-meta">{{ page.date | date: '%d/%m/%Y' }}</span>
+        {% if page.tags.size != 0 %}
+        <div class="tags">
+            {% for tag in page.tags %}
+            <a class="tag" href="/tag/{{tag}}">{{ tag }}</a>
+            {% endfor %}
+        </div>
+        {% endif %}
+    <section class="post-content">
+        {{ content }}
+    </section>
+</article>

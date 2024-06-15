@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="he">
+{% include head.html %}
+<body>
+    <div class="container">
+        <header>
+            <h1 class="site-title">
+                <a href="{{ site.baseurl }}">{{ site.title }}</a>
+                <span>{{ site.tagline }}</span>
+            </h1>
+        </header>
+        <main>
+            {{ content }}
+        </main>
+        <footer class="site-footer">
+            <small>
+                © {{ site.author.name }} {{ 'now' | date: "%Y" }}. כל הזכויות שמורות.
+            </small>
+        </footer>
+    </div>
+</body>
+
+</html>
